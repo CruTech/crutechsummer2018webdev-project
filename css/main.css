@@ -1,0 +1,21 @@
+/* Main Components */
+body {
+	font-family: Comic Sans MS;
+}
+
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+	padding: 40px;
+	
+	background-color: white;
+	border-radius: 20px;
+}
+
+/* Headings */
+
+/* Footer */
+.footer {
+	padding: 10px;
+	text-align: center;
+}
