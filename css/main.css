@@ -5,15 +5,32 @@ body {
 }
 
 .wrapper {
-	width: 800px;
+	height: 200px;
+    width: 1000px;
 	margin: 0 auto;
 	padding: 40px;
-	
 	background-color: white;
 	border-radius: 20px;
 }
 
-/* Headings */
+/* Sections */
+.section1 {
+	float: left;
+    width: 460px;
+    
+    border-radius: 10px;
+    padding: 15px;
+    background-color: lightgray;
+}
+
+.section2 {
+	float: right;
+    width: 460px;
+    
+    border-radius: 10px;
+    padding: 15px;
+    background-color: lightgray;
+}
 
 /* Footer */
 .footer {
