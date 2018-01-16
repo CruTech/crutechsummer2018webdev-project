@@ -1,41 +1,48 @@
-/* Main Components */
+/* CSS Document */
 body {
-	font-family: Comic Sans MS;
-	padding: 20px;
+    background-color: deepskyblue;
+    font-family: Comic Sans MS;
 }
 
 .wrapper {
-	height: 200px;
-    width: 1000px;
-	margin: 0 auto;
-	padding: 40px;
-	background-color: white;
-	border-radius: 20px;
+    margin: 0 auto;
+    width: 800px;
+    border-radius: 10px;
+    background-color: #FF7F50;
+    padding: 20px;
 }
 
-/* Sections */
+.date {
+    float: right;
+}
+
+.nav {
+    padding: 10px;
+    background-color:#DE9FA0;
+    text-align: center;
+    
+}
+
 .section1 {
-	float: left;
-    width: 460px;
-    
-    border-radius: 10px;
-    padding: 15px;
-    background-color: lightgray;
+    float: left;
+    width: 450px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-.section2 {
-	float: right;
-    width: 460px;
-    
-    border-radius: 10px;
-    padding: 15px;
-    background-color: lightgray;
+.section2{
+    float: right;
+    width: 300px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-/* Footer */
 .footer {
-	padding: 5px;
-	text-align: center;
-	background-color: #d4d7db;
-	border-radius: 5px;
+    text-align: center;
+    background-color: #DC143c;
+    padding: 10px;
+    border-radius: 10px;
+    clear: both;
 }
