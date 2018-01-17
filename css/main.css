@@ -20,23 +20,26 @@ body {
     padding: 10px;
     background-color:#DE9FA0;
     text-align: center;
+    border-radius: 5px;
     
 }
 
-.section1 {
-    float: left;
-    width: 450px;
+.section {
+    width: auto;
     background-color: aliceblue;
     border-radius: 5px;
     padding: 10px;
 }
 
-.section2{
-    float: right;
-    width: 300px;
-    background-color: aliceblue;
-    border-radius: 5px;
-    padding: 10px;
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+.data {
+    padding: 30px;
+    background-color: antiquewhite;
+    border-radius: 10px;
 }
 
 .footer {
