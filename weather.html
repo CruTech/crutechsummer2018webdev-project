@@ -5,8 +5,9 @@
     <title>CruTech Weather Station</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <script src="js/weather.js"></script>
+    <script src="js/Chart.js"></script>
 </head>
-<body onLoad="httpPost('http://weather.crutech.cru/latest')">
+<body>
 	<div class="wrapper">
         <div class="header">
             <h1>CruTech Weather Station</h1>
@@ -24,6 +25,52 @@
                 <p>Humidity: <span id="humidity">Loading...</span></p>
                 <p>Pressure: <span id="pressure">Loading...</span></p>
                 <p>Last Update: <span id="lastupdate">Loading...</span></p>
+            </div>
+            <br>
+            
+            <div class="chart">
+                <canvas id="myChart" width="600" height="400"></canvas>
+                    <script>
+                    var ctx = document.getElementById("myChart").getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: [
+                                "Temprature", 
+                                "Humidity", 
+                                "Pressure"
+                            ],
+                            datasets: [{
+                                label: [
+                                  'Temprature',
+                                  'Humidity',
+                                  'Pressure'
+                                ],
+                                data: [12, 19, 3, 5, 2, 3],
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(255, 206, 86, 0.2)'
+                                ],
+                                borderColor: [
+                                    'rgba(255,99,132,1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)'
+                                ],
+                                borderWidth: 3
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero:true
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                </script>
             </div>
         </div>
             
